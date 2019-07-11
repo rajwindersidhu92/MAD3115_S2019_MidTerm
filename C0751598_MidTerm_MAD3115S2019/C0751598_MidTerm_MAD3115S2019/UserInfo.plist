@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cutomer</key>
+	<array>
+		<dict>
+			<key>cPassword</key>
+			<string>12345</string>
+			<key>cid</key>
+			<integer>4</integer>
+			<key>cName</key>
+			<string>ujval</string>
+			<key>cEmail</key>
+			<string>ujval@gmail.com</string>
+		</dict>
+		<dict>
+			<key>cPassword</key>
+			<string>12345</string>
+			<key>cid</key>
+			<integer>3</integer>
+			<key>cName</key>
+			<string>Rajwinder</string>
+			<key>cEmail</key>
+			<string>Raj@gmail.com</string>
+		</dict>
+		<dict>
+			<key>cPassword</key>
+			<string>12345</string>
+			<key>cid</key>
+			<integer>2</integer>
+			<key>cName</key>
+			<string>Vipul</string>
+			<key>cEmail</key>
+			<string>Vipul@gmail.com</string>
+		</dict>
+		<dict>
+			<key>cPassword</key>
+			<string>12345</string>
+			<key>cid</key>
+			<integer>1</integer>
+			<key>cName</key>
+			<string>Neeraj</string>
+			<key>cEmail</key>
+			<string>Neeraj</string>
+		</dict>
+	</array>
+</dict>
+</plist>
