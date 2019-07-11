@@ -14,6 +14,9 @@
 		0F710C2122D7F6D800CA59E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F710C1F22D7F6D800CA59E0 /* LaunchScreen.storyboard */; };
 		0F73371122D7F95B005321C8 /* bills-icon-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371022D7F95B005321C8 /* bills-icon-2.jpg */; };
 		0F73371322D7FB61005321C8 /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371222D7FB61005321C8 /* UserInfo.plist */; };
+		0F73371722D7FF66005321C8 /* loginimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371622D7FF66005321C8 /* loginimage.jpg */; };
+		0F73371922D7FFF3005321C8 /* icons8-signin-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371822D7FFF3005321C8 /* icons8-signin-50.png */; };
+		0F73371B22D80181005321C8 /* loginbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371A22D80181005321C8 /* loginbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		0F710C2222D7F6D800CA59E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F73371022D7F95B005321C8 /* bills-icon-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bills-icon-2.jpg"; sourceTree = "<group>"; };
 		0F73371222D7FB61005321C8 /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
+		0F73371622D7FF66005321C8 /* loginimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginimage.jpg; sourceTree = "<group>"; };
+		0F73371822D7FFF3005321C8 /* icons8-signin-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-signin-50.png"; sourceTree = "<group>"; };
+		0F73371A22D80181005321C8 /* loginbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 		0F73370F22D7F8FA005321C8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				0F73371A22D80181005321C8 /* loginbutton.png */,
+				0F73371822D7FFF3005321C8 /* icons8-signin-50.png */,
+				0F73371622D7FF66005321C8 /* loginimage.jpg */,
 				0F73371022D7F95B005321C8 /* bills-icon-2.jpg */,
 			);
 			path = images;
@@ -137,10 +146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F710C2122D7F6D800CA59E0 /* LaunchScreen.storyboard in Resources */,
+				0F73371722D7FF66005321C8 /* loginimage.jpg in Resources */,
+				0F73371922D7FFF3005321C8 /* icons8-signin-50.png in Resources */,
 				0F710C1E22D7F6D800CA59E0 /* Assets.xcassets in Resources */,
 				0F73371122D7F95B005321C8 /* bills-icon-2.jpg in Resources */,
 				0F73371322D7FB61005321C8 /* UserInfo.plist in Resources */,
 				0F710C1C22D7F6D700CA59E0 /* Main.storyboard in Resources */,
+				0F73371B22D80181005321C8 /* loginbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
