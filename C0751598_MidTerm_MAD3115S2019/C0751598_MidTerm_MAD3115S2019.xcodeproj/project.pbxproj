@@ -18,6 +18,12 @@
 		0F73371922D7FFF3005321C8 /* icons8-signin-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371822D7FFF3005321C8 /* icons8-signin-50.png */; };
 		0F73371B22D80181005321C8 /* loginbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371A22D80181005321C8 /* loginbutton.png */; };
 		0F73372522D8F53F005321C8 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73372422D8F53F005321C8 /* BillListTableViewController.swift */; };
+		0F73373522D91E25005321C8 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373422D91E25005321C8 /* ShowBillDetailsViewController.swift */; };
+		0F73373722D91EF4005321C8 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373622D91EF4005321C8 /* Bill.swift */; };
+		0F73373922D91F01005321C8 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373822D91F01005321C8 /* Customer.swift */; };
+		0F73373B22D91F18005321C8 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373A22D91F18005321C8 /* Hydro.swift */; };
+		0F73373D22D91F2A005321C8 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373C22D91F2A005321C8 /* Mobile.swift */; };
+		0F73373F22D91F37005321C8 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373E22D91F37005321C8 /* Internet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		0F73371822D7FFF3005321C8 /* icons8-signin-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-signin-50.png"; sourceTree = "<group>"; };
 		0F73371A22D80181005321C8 /* loginbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbutton.png; sourceTree = "<group>"; };
 		0F73372422D8F53F005321C8 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
+		0F73373422D91E25005321C8 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		0F73373622D91EF4005321C8 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bill.swift; path = C0751598_MidTerm_MAD3115S2019/Bill.swift; sourceTree = SOURCE_ROOT; };
+		0F73373822D91F01005321C8 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = C0751598_MidTerm_MAD3115S2019/Customer.swift; sourceTree = SOURCE_ROOT; };
+		0F73373A22D91F18005321C8 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hydro.swift; path = C0751598_MidTerm_MAD3115S2019/Hydro.swift; sourceTree = SOURCE_ROOT; };
+		0F73373C22D91F2A005321C8 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mobile.swift; path = C0751598_MidTerm_MAD3115S2019/Mobile.swift; sourceTree = SOURCE_ROOT; };
+		0F73373E22D91F37005321C8 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Internet.swift; path = C0751598_MidTerm_MAD3115S2019/Internet.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 				0F710C2222D7F6D800CA59E0 /* Info.plist */,
 				0F73371222D7FB61005321C8 /* UserInfo.plist */,
 				0F73372422D8F53F005321C8 /* BillListTableViewController.swift */,
+				0F73373422D91E25005321C8 /* ShowBillDetailsViewController.swift */,
 			);
 			path = C0751598_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -94,6 +107,11 @@
 		0F73372722D90E41005321C8 /* SwiftClasses */ = {
 			isa = PBXGroup;
 			children = (
+				0F73373622D91EF4005321C8 /* Bill.swift */,
+				0F73373822D91F01005321C8 /* Customer.swift */,
+				0F73373A22D91F18005321C8 /* Hydro.swift */,
+				0F73373C22D91F2A005321C8 /* Mobile.swift */,
+				0F73373E22D91F37005321C8 /* Internet.swift */,
 			);
 			path = SwiftClasses;
 			sourceTree = "<group>";
@@ -174,9 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F73373B22D91F18005321C8 /* Hydro.swift in Sources */,
 				0F710C1922D7F6D700CA59E0 /* loginViewController.swift in Sources */,
+				0F73373722D91EF4005321C8 /* Bill.swift in Sources */,
+				0F73373F22D91F37005321C8 /* Internet.swift in Sources */,
 				0F73372522D8F53F005321C8 /* BillListTableViewController.swift in Sources */,
+				0F73373922D91F01005321C8 /* Customer.swift in Sources */,
 				0F710C1722D7F6D700CA59E0 /* AppDelegate.swift in Sources */,
+				0F73373522D91E25005321C8 /* ShowBillDetailsViewController.swift in Sources */,
+				0F73373D22D91F2A005321C8 /* Mobile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
