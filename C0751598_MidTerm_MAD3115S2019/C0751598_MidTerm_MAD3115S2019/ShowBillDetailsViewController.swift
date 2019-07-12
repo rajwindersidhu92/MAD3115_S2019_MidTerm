@@ -32,6 +32,28 @@ class ShowBillDetailsViewController: UIViewController//UITableViewDelegate, UITa
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "billTableCell")  as! UITableViewCell
+        
+        let currentbill = Customer.customerClicked.bills[indexPath.row + 1]
+        var furtherDetails = ""
+        if currentbill?.billType == "Mobile" {
+            cell.textLabel?.numberOfLines = 12
+            let mobileBill = currentbill as! Mobile
+            furtherDetails = "\(mobileBill.mobileManufacturerName)\n"
+        } else {
+            if currentbill?.billType == "Hydro" {
+                cell.textLabel?.numberOfLines = 12
+                let hydroBill = currentbill as! Hydro
+                furtherDetails = "its hydrao"
+            } else {
+                if currentbill?.billType == "Internet "{
+                    cell.textLabel?.numberOfLines = 12
+                    let internetBill = currentbill as! Internet
+                    furtherDetails = "ints internet"
+                }
+            }
+        }
+        cell.textLabel?.text = "Bill ID : \(String(describing: currentbill!.billId)) \nBill Date : \(String(describing: currentbill!.billDate)) \nBill Type : \(String(describing: currentbill!.billType)) \nBill Total : \(String(describing: currentbill!.totalBillAmount)) \(furtherDetails)"
         return cell
         
     }

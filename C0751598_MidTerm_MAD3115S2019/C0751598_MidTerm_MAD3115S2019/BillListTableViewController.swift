@@ -15,7 +15,7 @@ class BillListTableViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         
-        var bill1 = Hyro(agencyName : "Planet Energy", unitConsumed : 29.0, billId: 1, billDate: Date() , billType: "Hydro", totalbillAmount: 45.35)
+        var bill1 = Hydro(agencyName : "Planet Energy", unitConsumed : 29.0, billId: 1, billDate: Date() , billType: "Hydro", totalbillAmount: 45.35)
         
         var cutomer1 = Customer(customerId :1, firstName :"Pritesh", lastName : "Patel", emailId : "amallabyg@topsy.com", bills: [1 : bill1])
         

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Hyro: Bill {
+class Hydro: Bill {
     var agencyName:String = String()
     var unitConsumed:Float = 0.0
     
