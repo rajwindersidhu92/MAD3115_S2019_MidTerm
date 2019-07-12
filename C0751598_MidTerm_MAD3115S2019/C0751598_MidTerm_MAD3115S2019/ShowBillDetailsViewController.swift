@@ -36,6 +36,7 @@ class ShowBillDetailsViewController: UIViewController, UITableViewDelegate, UITa
         
         self.billDetailTable.delegate = self
         self.billDetailTable.dataSource = self
+       
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +60,7 @@ class ShowBillDetailsViewController: UIViewController, UITableViewDelegate, UITa
                 let hydroBill = currentbill as! Hydro
                 billSpecificDetails = "\n Agency Name : \(String(describing: hydroBill.agencyName))\n Units consumed : \(String(describing: hydroBill.unitConsumed))"
             } else {
-                if currentbill?.billType == "Internet "{
+                if currentbill?.billType == "Internet"{
                     cell.textLabel?.numberOfLines = 12
                     let internetBill = currentbill as! Internet
                     billSpecificDetails = "\n intenet gb used : \(String(describing: internetBill.internetGBUsed))\n Providers name : \(String(describing: internetBill.providerName))"

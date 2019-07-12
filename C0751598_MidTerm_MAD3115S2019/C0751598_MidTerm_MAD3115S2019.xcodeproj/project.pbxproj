@@ -24,6 +24,7 @@
 		0F73373B22D91F18005321C8 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373A22D91F18005321C8 /* Hydro.swift */; };
 		0F73373D22D91F2A005321C8 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373C22D91F2A005321C8 /* Mobile.swift */; };
 		0F73373F22D91F37005321C8 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73373E22D91F37005321C8 /* Internet.swift */; };
+		0F73374122D94E27005321C8 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73374022D94E26005321C8 /* AddNewBillViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		0F73373A22D91F18005321C8 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Hydro.swift; path = C0751598_MidTerm_MAD3115S2019/Hydro.swift; sourceTree = SOURCE_ROOT; };
 		0F73373C22D91F2A005321C8 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mobile.swift; path = C0751598_MidTerm_MAD3115S2019/Mobile.swift; sourceTree = SOURCE_ROOT; };
 		0F73373E22D91F37005321C8 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Internet.swift; path = C0751598_MidTerm_MAD3115S2019/Internet.swift; sourceTree = SOURCE_ROOT; };
+		0F73374022D94E26005321C8 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				0F73371222D7FB61005321C8 /* UserInfo.plist */,
 				0F73372422D8F53F005321C8 /* BillListTableViewController.swift */,
 				0F73373422D91E25005321C8 /* ShowBillDetailsViewController.swift */,
+				0F73374022D94E26005321C8 /* AddNewBillViewController.swift */,
 			);
 			path = C0751598_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				0F73373922D91F01005321C8 /* Customer.swift in Sources */,
 				0F710C1722D7F6D700CA59E0 /* AppDelegate.swift in Sources */,
 				0F73373522D91E25005321C8 /* ShowBillDetailsViewController.swift in Sources */,
+				0F73374122D94E27005321C8 /* AddNewBillViewController.swift in Sources */,
 				0F73373D22D91F2A005321C8 /* Mobile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

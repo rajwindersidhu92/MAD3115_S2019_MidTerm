@@ -203,7 +203,11 @@
                                 <items>
                                     <navigationItem title="Bill Details" id="PO8-W6-73H">
                                         <barButtonItem key="leftBarButtonItem" id="R6k-rV-bbn"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Add New" id="9id-2b-Rne"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Add New" id="9id-2b-Rne">
+                                            <connections>
+                                                <segue destination="5xB-OU-U7s" kind="show" id="xqG-eo-0Ak"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -244,6 +248,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdy-I8-HI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3337.68115942029" y="20.758928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RF5-5j-CNa">
+            <objects>
+                <viewController id="5xB-OU-U7s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCc-37-cXe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-oz-zxV">
+                                <rect key="frame" x="37" y="154" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26927277449999998" green="0.50457680230000002" blue="0.87062710519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="FoD-Tm-FvS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bY-tY-Nvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4398.5507246376819" y="39.508928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zov-Ra-XSk">
