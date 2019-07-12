@@ -17,6 +17,7 @@
 		0F73371722D7FF66005321C8 /* loginimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371622D7FF66005321C8 /* loginimage.jpg */; };
 		0F73371922D7FFF3005321C8 /* icons8-signin-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371822D7FFF3005321C8 /* icons8-signin-50.png */; };
 		0F73371B22D80181005321C8 /* loginbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F73371A22D80181005321C8 /* loginbutton.png */; };
+		0F73372522D8F53F005321C8 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73372422D8F53F005321C8 /* BillListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0F73371622D7FF66005321C8 /* loginimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginimage.jpg; sourceTree = "<group>"; };
 		0F73371822D7FFF3005321C8 /* icons8-signin-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-signin-50.png"; sourceTree = "<group>"; };
 		0F73371A22D80181005321C8 /* loginbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginbutton.png; sourceTree = "<group>"; };
+		0F73372422D8F53F005321C8 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0F710C1F22D7F6D800CA59E0 /* LaunchScreen.storyboard */,
 				0F710C2222D7F6D800CA59E0 /* Info.plist */,
 				0F73371222D7FB61005321C8 /* UserInfo.plist */,
+				0F73372422D8F53F005321C8 /* BillListTableViewController.swift */,
 			);
 			path = C0751598_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F710C1922D7F6D700CA59E0 /* loginViewController.swift in Sources */,
+				0F73372522D8F53F005321C8 /* BillListTableViewController.swift in Sources */,
 				0F710C1722D7F6D700CA59E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

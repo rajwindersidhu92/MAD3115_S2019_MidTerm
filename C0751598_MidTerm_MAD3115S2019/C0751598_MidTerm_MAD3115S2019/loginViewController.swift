@@ -94,4 +94,13 @@ class loginViewController: UIViewController {
      */
     
     }
+    
+    @IBAction func unWindLogoutFromAnyScreen(storyboardSegue: UIStoryboardSegue)
+    {
+        let s = storyboardSegue.source as! BillListTableViewController
+        print("Here")
+        
+        txtPassword.text = ""
+        txtEmailID.text = ""
+    }
 }
