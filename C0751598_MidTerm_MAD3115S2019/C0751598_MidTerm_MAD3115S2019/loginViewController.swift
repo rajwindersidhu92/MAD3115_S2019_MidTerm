@@ -10,6 +10,8 @@ import UIKit
 
 class loginViewController: UIViewController {
     
+    var userExist = false
+    
     @IBOutlet weak var txtEmailID: UITextField!
     @IBOutlet weak var switchRememberme: UISwitch!
     @IBOutlet weak var txtPassword: UITextField!
@@ -36,25 +38,42 @@ class loginViewController: UIViewController {
     }
     
     @IBAction func btnLoginClicked(_ sender: Any) {
-        if self.txtEmailID.text == "admin@gmail.com" && self.txtPassword.text == "12345"
-        {
-            print("here")
+        
+        if let plist = Bundle.main.path(forResource: "UserInfo", ofType: "plist")
             
-            let userDefault = UserDefaults.standard
-            if switchRememberme.isOn
-            {
-                userDefault.setValue(txtEmailID.text, forKey: "userEmail")
-                userDefault.set(txtPassword.text, forKey: "userPassword")
-            }
-            else
-            {
-                userDefault.removeObject(forKey: "userEmail")
-                userDefault.removeObject(forKey: "userPassword")
-            }
-            self.performSegue(withIdentifier: "UserLoggedIn", sender: nil)
-        }
-        else
         {
+            if let dict = NSDictionary(contentsOfFile: plist)
+            {
+                if let users = dict["Users"] as? [[String:Any]]
+                {
+                    for user in users
+                    {
+                        let username = user["username"] as! String
+                        let password = user["password"] as! String
+                        
+                        if ( (self.txtEmailID.text == username) && (self.txtPassword.text == password) )
+                        {
+                            userExist = true
+                            let userDefault = UserDefaults.standard
+                            if switchRememberme.isOn
+                            {
+                                userDefault.setValue(txtEmailID.text, forKey: "userEmail")
+                                userDefault.set(txtPassword.text, forKey: "userPassword")
+                            }
+                            else
+                            {
+                                userDefault.removeObject(forKey: "userEmail")
+                                userDefault.removeObject(forKey: "userPassword")
+                            }
+                            self.performSegue(withIdentifier: "UserLoggedIn", sender: nil)
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        if !userExist{
             let alert = UIAlertController(title: "Error", message: "Try again, User Email / Password Invalid", preferredStyle: .alert)
             
             let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -63,8 +82,7 @@ class loginViewController: UIViewController {
             
             self.present(alert, animated: true)
         }
-    }
-    
+     
     /*
      // MARK: - Navigation
      
@@ -75,4 +93,5 @@ class loginViewController: UIViewController {
      }
      */
     
+    }
 }

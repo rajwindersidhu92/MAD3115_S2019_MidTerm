@@ -2,7 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>cutomer</key>
+	<key>Users</key>
+	<array>
+		<dict>
+			<key>password</key>
+			<string>12345</string>
+			<key>username</key>
+			<string>admin1@gmail.com</string>
+		</dict>
+		<dict>
+			<key>password</key>
+			<string>12345</string>
+			<key>username</key>
+			<string>admin@gmail.com</string>
+		</dict>
+	</array>
+	<key>customer</key>
 	<array>
 		<dict>
 			<key>cPassword</key>
