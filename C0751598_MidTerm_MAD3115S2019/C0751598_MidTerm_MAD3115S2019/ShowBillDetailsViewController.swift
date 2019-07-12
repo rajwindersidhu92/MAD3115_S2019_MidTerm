@@ -9,10 +9,32 @@
 import UIKit
 
 class ShowBillDetailsViewController: UIViewController {
-
+    @IBOutlet weak var customerID: UILabel!
+    @IBOutlet weak var customerName: UILabel!
+    @IBOutlet weak var totalBillAmount: UILabel!
+    @IBOutlet weak var customerEmail: UILabel!
+    @IBOutlet weak var billDetailTable: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var yPos = 90
+        for i in 0..<dataArr.count {
+            let element = dataArr[i]
+            let labelNum = UILabel()
+            let split = element.components(separatedBy: ",")
+            
+            let num1 = split[0]
+            let num2 = split[1]
+            
+            let num1Nnum2 = "number 1 :" + num1 + " number 2:" + num2
+            labelNum.text = num1Nnum2
+            labelNum.textAlignment = .center
+            labelNum.frame = CGRect( x:10, y:yPos, width:250, height: 80)
+            yPos += 80
+            self.view.addSubview(labelNum)
+            
+        }
         // Do any additional setup after loading the view.
     }
     

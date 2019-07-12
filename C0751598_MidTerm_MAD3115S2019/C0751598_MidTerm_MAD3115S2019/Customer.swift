@@ -17,6 +17,9 @@ class Customer{
     var emailId:String = String()
     
     static  var customerArray = Array<Customer>()
+    
+    static var customerClicked = Customer()
+    
     var bills = [Int: Bill]()
     var totalAmountToBePaid: Float {
         get {
@@ -37,6 +40,14 @@ class Customer{
         {
             self.bills = b
         }
+    }
+    
+    init() {
+        self.customerId = 0
+        self.firstName = ""
+        self.lastName = ""
+        self.emailId = ""
+        
     }
     
     func addMoreBills(newBills : [Int: Bill]){
