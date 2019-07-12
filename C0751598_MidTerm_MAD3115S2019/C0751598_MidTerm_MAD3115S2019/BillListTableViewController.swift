@@ -66,8 +66,9 @@ class BillListTableViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        selecterRowIndex = indexPath.row
-        performSegue(withIdentifier: "ShowCustomerDetails", sender: self)
+        Customer.customerClicked = Customer.customerArray[indexPath.row]
+      //  print(Customer.customerClicked)
+       performSegue(withIdentifier: "ShowCustomerDetails", sender: "nil")
     }
 
     /*
