@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ShowBillDetailsViewController: UIViewController//UITableViewDelegate, UITableViewDataSource
+extension Float
+{
+    public func currency() -> String
+    {
+        return String.init(format: "$%0.2f", self)
+    }
+}
+
+class ShowBillDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
 
     
@@ -25,6 +33,9 @@ class ShowBillDetailsViewController: UIViewController//UITableViewDelegate, UITa
         self.customerName.text = String(Customer.customerClicked.firstName)
         self.customerEmail.text = String(Customer.customerClicked.emailId)
         self.totalBillAmount.text = String(Customer.customerClicked.totalAmountToBePaid)
+        
+        self.billDetailTable.delegate = self
+        self.billDetailTable.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,25 +46,27 @@ class ShowBillDetailsViewController: UIViewController//UITableViewDelegate, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: "billTableCell")  as! UITableViewCell
         
         let currentbill = Customer.customerClicked.bills[indexPath.row + 1]
-        var furtherDetails = ""
+        var BillDetails = ""
+        var billSpecificDetails = ""
+        BillDetails = "Bill ID : \(String(describing: currentbill!.billId)) \nBill Date : \(String(describing: currentbill!.billDate)) \nBill Type : \(String(describing: currentbill!.billType)) \nBill Total : \(String(describing: currentbill!.totalBillAmount.currency()))"
         if currentbill?.billType == "Mobile" {
             cell.textLabel?.numberOfLines = 12
             let mobileBill = currentbill as! Mobile
-            furtherDetails = "\(mobileBill.mobileManufacturerName)\n"
+            billSpecificDetails = "\n Manufacture : \(String(describing: mobileBill.mobileManufacturerName))\n internet used : \(String(describing: mobileBill.internetGBUsed))\n Minutes used : \(String(describing: mobileBill.minuteUsed))\n Mobile number : \(String(describing: mobileBill.mobileNumber))\n Plan Name : \(String(describing: mobileBill.planName))"
         } else {
             if currentbill?.billType == "Hydro" {
                 cell.textLabel?.numberOfLines = 12
                 let hydroBill = currentbill as! Hydro
-                furtherDetails = "its hydrao"
+                billSpecificDetails = "\n Agency Name : \(String(describing: hydroBill.agencyName))\n Units consumed : \(String(describing: hydroBill.unitConsumed))"
             } else {
                 if currentbill?.billType == "Internet "{
                     cell.textLabel?.numberOfLines = 12
                     let internetBill = currentbill as! Internet
-                    furtherDetails = "ints internet"
+                    billSpecificDetails = "\n intenet gb used : \(String(describing: internetBill.internetGBUsed))\n Providers name : \(String(describing: internetBill.providerName))"
                 }
             }
         }
-        cell.textLabel?.text = "Bill ID : \(String(describing: currentbill!.billId)) \nBill Date : \(String(describing: currentbill!.billDate)) \nBill Type : \(String(describing: currentbill!.billType)) \nBill Total : \(String(describing: currentbill!.totalBillAmount)) \(furtherDetails)"
+        cell.textLabel?.text = "\(BillDetails)/n\(billSpecificDetails)"
         return cell
         
     }
