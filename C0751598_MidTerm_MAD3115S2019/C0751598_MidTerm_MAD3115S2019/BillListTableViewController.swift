@@ -8,13 +8,15 @@
 
 import UIKit
 
-class BillListTableViewController: UIViewController, UITableViewDataSource{
+class BillListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var tableView: UITableView!
     var data = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
         tableView.dataSource = self
         
         for i in 0...100 {

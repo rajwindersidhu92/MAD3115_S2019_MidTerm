@@ -66,6 +66,7 @@
 		0F710C1522D7F6D700CA59E0 /* C0751598_MidTerm_MAD3115S2019 */ = {
 			isa = PBXGroup;
 			children = (
+				0F73372722D90E41005321C8 /* SwiftClasses */,
 				0F73370F22D7F8FA005321C8 /* images */,
 				0F710C1622D7F6D700CA59E0 /* AppDelegate.swift */,
 				0F710C1822D7F6D700CA59E0 /* loginViewController.swift */,
@@ -88,6 +89,13 @@
 				0F73371022D7F95B005321C8 /* bills-icon-2.jpg */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		0F73372722D90E41005321C8 /* SwiftClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
