@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="3337.68115942029" y="20.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Add New Bill View Controller-->
         <scene sceneID="RF5-5j-CNa">
             <objects>
-                <viewController id="5xB-OU-U7s" sceneMemberID="viewController">
+                <viewController id="5xB-OU-U7s" customClass="AddNewBillViewController" customModule="C0751598_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KCc-37-cXe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,6 +300,9 @@
                         <color key="backgroundColor" red="0.26927277449999998" green="0.50457680230000002" blue="0.87062710519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="FoD-Tm-FvS"/>
                     </view>
+                    <connections>
+                        <outlet property="billTypePicker" destination="1xj-TX-w7K" id="gfo-1Q-Ebs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bY-tY-Nvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

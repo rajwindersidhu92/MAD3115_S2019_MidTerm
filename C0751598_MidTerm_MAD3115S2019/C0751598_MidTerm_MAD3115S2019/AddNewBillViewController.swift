@@ -10,6 +10,8 @@ import UIKit
 
 class AddNewBillViewController: UIViewController {
 
+    @IBOutlet weak var billTypePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
